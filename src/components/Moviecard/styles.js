@@ -24,8 +24,10 @@ export const Header = styled.div`
   }
 
   border-radius: 15px;
-  > h1 {
-    font-size: 24px;
+  a{
+    display: flex;
+    color: white;
+    font-size: 14px;
   }
   p {
     margin: 15px 0;

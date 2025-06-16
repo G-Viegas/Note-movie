@@ -28,8 +28,9 @@ export const Container = styled.div`
   }
 
   > input {
+    display: inline-block;
     height: 56px;
-    max-width: 100%;
+    width: fit-content;
 
     padding: 16px;
 

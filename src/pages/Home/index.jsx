@@ -5,13 +5,16 @@ import { ContentHeader } from './styles';
 import { Card } from '../../components/Moviecard';
 import { CardList } from './styles';
 
+import { Link } from 'react-router-dom';
+
 export function Home() {
   return (
     <Container>
       <Header />
       <ContentHeader>
         <h1>Meus filmes</h1>
-        <Button>+ Adicionar filme</Button>
+
+        <Link to='/createMovie'>+ Adicionar filme </Link>
       </ContentHeader>
       <CardList>
         <Card />

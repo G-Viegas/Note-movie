@@ -2,6 +2,9 @@ import { useState } from 'react';
 
 import { Container, Header, Section } from './styles';
 import { IoMdStarOutline, IoMdStarHalf, IoMdStar } from 'react-icons/io';
+
+import { Link } from 'react-router-dom';
+
 import { Tag } from '../Tag';
 export function Card() {
   const [expand, setExpand] = useState(false);
@@ -42,7 +45,9 @@ export function Card() {
   return (
     <Container>
       <Header>
+        <Link to="/moviePreview">
         <h1>Interestellar</h1>
+        </Link>
         <IoMdStar />
         <IoMdStar />
         <IoMdStar />

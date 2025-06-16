@@ -16,8 +16,29 @@ export const Container = styled.div`
     border-radius: 10px;
   }
 
-  > Section {
+  .main {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding-right: 8px;
+    width: 80%;
+    height: 760px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ff859b;
+      border-radius: 4px;
+    }
+
     margin: auto;
+  }
+
+  > .main Section {
+    margin: 40px auto;
     width: 80%;
   }
 
@@ -35,7 +56,7 @@ export const Container = styled.div`
 
   .Buttons > Button:nth-child(1) {
     background-color: black;
-    color: ${({theme}) => theme.COLORS.ROSA};
+    color: ${({ theme }) => theme.COLORS.ROSA};
   }
 `;
 
@@ -64,5 +85,13 @@ export const Forms = styled.div`
   align-items: center;
   > p {
     margin-left: 8px;
+  }
+  a {
+    color: ${({ theme }) => theme.COLORS.ROSA};
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 8px;
+    }
   }
 `;

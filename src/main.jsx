@@ -4,15 +4,13 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/global';
 import theme from './styles/theme';
 
-import { Home } from './pages/Home/index.jsx';
-import { CreateMovie } from './pages/CreateMovie/index.jsx';
-import { Details } from './pages/Details/index.jsx';
+import { Routes } from './routes';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <CreateMovie/>
+      <Routes />
     </ThemeProvider>
   </StrictMode>
 );
